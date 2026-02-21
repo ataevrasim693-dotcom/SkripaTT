@@ -7,9 +7,6 @@ from aiogram.utils import executor
 import os
 TOKEN = os.getenv("BOT_TOKEN")
 
-if not TOKEN:
-    raise ValueError("BOT_TOKEN не найден!")
-
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
