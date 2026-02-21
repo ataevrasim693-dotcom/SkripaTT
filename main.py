@@ -5,8 +5,12 @@ from aiogram.utils import executor
 
 # Using the token provided by the user
 import os
-TOKEN = os.getenv("BOT_TOKEN")
+from aiogram import Bot, Dispatcher, types
+from aiogram.types import Message
+from aiogram.utils import executor
+import yt_dlp
 
+TOKEN = os.getenv("BOT_TOKEN")  # <- именно так
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
