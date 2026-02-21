@@ -4,7 +4,8 @@ from aiogram.types import Message
 from aiogram.utils import executor
 
 # Using the token provided by the user
-TOKEN = "8334920553:AAFk2_sogCuP--bkBLArmxPuS9llPMDZ59o"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
